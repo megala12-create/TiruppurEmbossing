@@ -1,26 +1,344 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* =====================================================================
+   Tiruppur Embossing - design tokens
+   Colour system derived from the supplied logo. Foundation is near-black
+   with off-white type; brand colours are used as purposeful accents:
+   teal = precision/technology · red/maroon = energy/brand · orange/amber = warmth/production
+   ===================================================================== */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  /* Neutrals (light theme). Token names are semantic:
+     ink  = page background / text on dark or brand fills
+     bone = primary text / dark fills */
+  --color-ink: #ffffff;
+  --color-carbon: #f7f6f4;
+  --color-graphite: #efede9;
+  --color-steel: #d9d6d0;
+  --color-line: #e3e0da;
+  --color-mute: #5b5853;
+  --color-bone: #16161a;
+  --color-paper: #f4f2ee;
+  --color-paper-line: #dedad3;
+  --color-paper-mute: #5b5853;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Brand (from logo): teal · red/maroon · orange/amber */
+  --color-maroon: #8f202c;
+  --color-red: #c81c24;
+  --color-orange: #f77e1e;
+  --color-amber: #fbb03c;
+  --color-teal-deep: #017486;
+  --color-teal: #008d9b;
+  /* AA-safe text shades on white */
+  --color-teal-light: #017486;
+  --color-orange-deep: #b4530b;
+
+  /* Type */
+  --font-display: var(--font-archivo), "Arial Narrow", system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Breakpoints (content-led; spec: <640 / 640–1024 / 1024–1440 / >1440) */
+  --breakpoint-wide: 90rem;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
+  --animate-rise: rise 0.9s var(--ease-out-expo) both;
+  --animate-fade: fade-in 0.8s ease both;
+
+  @keyframes marquee {
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  @keyframes rise {
+    from {
+      transform: translate3d(0, 105%, 0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes scroll-cue {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(200%);
+  }
+}
+
+/* ------------------------------------------------------------ base */
+@layer base {
+  html {
+    background: var(--color-ink);
+    color: var(--color-bone);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scrollbar-color: var(--color-steel) var(--color-ink);
+  }
+
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    background: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--color-teal-deep);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-teal-deep);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font: inherit;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+}
+
+/* ------------------------------------------------------ typography */
+@utility t-display {
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 68;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.86;
+  letter-spacing: -0.015em;
+  font-size: clamp(3rem, 15.5vw, 6.5rem);
+  @media (min-width: 48rem) {
+    font-size: clamp(5rem, 12.2vw, 13rem);
+  }
+}
+
+@utility t-h1 {
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 70;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  font-size: clamp(2.7rem, 8.4vw, 8.75rem);
+}
+
+@utility t-h2 {
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 72;
+  font-weight: 750;
+  text-transform: uppercase;
+  line-height: 0.92;
+  letter-spacing: -0.005em;
+  font-size: clamp(2.1rem, 5.6vw, 5.5rem);
+}
+
+@utility t-h3 {
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 80;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: clamp(1.35rem, 2.3vw, 2.1rem);
+}
+
+@utility t-statement {
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 88;
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  font-size: clamp(1.9rem, 4.6vw, 4.6rem);
+}
+
+@utility t-lead {
+  font-size: clamp(1.05rem, 1.35vw, 1.3rem);
+  line-height: 1.55;
+}
+
+@utility t-label {
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 100;
+  font-weight: 600;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@utility t-number {
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 62;
+  font-weight: 800;
+  line-height: 0.8;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------------------------------------------------------- layout */
+@utility container-x {
+  width: 100%;
+  max-width: 1760px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3.6vw, 3.5rem);
+}
+
+@utility section-y {
+  padding-block: clamp(4.5rem, 11vw, 10rem);
+}
+
+@utility hairline {
+  border-color: var(--color-line);
+}
+
+/* Animated underline for text links */
+@utility link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.45s var(--ease-out-expo);
+  &:hover,
+  &:focus-visible,
+  &[aria-current="page"] {
+    background-size: 100% 1px;
+    background-position: 0% 100%;
+  }
+}
+
+/* Masked line/word reveal (hero uses CSS only; other headings via GSAP) */
+@utility mask-line {
+  display: inline-block;
+  overflow: clip;
+  overflow-clip-margin: 0.08em;
+  vertical-align: top;
+  padding-bottom: 0.04em;
+  margin-bottom: -0.04em;
+}
+
+/* Film grain - very subtle, fixed, non-interactive */
+@utility grain {
+  &::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+/* ---------------------------------------------------- lenis support */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+.lenis [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------- page transitions */
+::view-transition-old(.page-out) {
+  animation: 180ms ease-in both vt-fade-out;
+}
+::view-transition-new(.page-in) {
+  animation: 520ms var(--ease-out-expo) 60ms both vt-rise-in;
+}
+@keyframes vt-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes vt-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+/* --------------------------------------------------- details/accordion */
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+  details::details-content {
+    block-size: 0;
+    overflow-y: clip;
+    transition:
+      block-size 0.45s var(--ease-out-expo),
+      content-visibility 0.45s allow-discrete;
+  }
+  details[open]::details-content {
+    block-size: auto;
+  }
+}
+
+/* Draw-on SVG strokes (diagrams). Fully drawn without JS. */
+.draw-path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+
+/* Hide native number/date clutter consistently */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+/* ------------------------------------------------- reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
 }
