@@ -20,7 +20,7 @@ export const site = {
   tagline: "Printing Innovation at Its Finest",
   description:
     "Tiruppur Embossing is a textile printing partner in Tiruppur offering emboss, silicone HD, high-density, DTF, sublimation, screen, specialty and transfer printing for brands, manufacturers and apparel businesses.",
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.tiruppurembossing.com").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.tiruppurembossing.com").replace(/\/$/, ""),
   locale: "en_IN",
 
   contact: {
