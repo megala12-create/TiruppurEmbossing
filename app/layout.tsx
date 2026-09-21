@@ -52,7 +52,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-IN" className={`${archivo.variable} ${inter.variable}`}>
-      <body className="grain">{children}</body>
+      <body className="grain" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
