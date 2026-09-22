@@ -5,6 +5,8 @@ import { services as defaultServices } from "@/data/services";
 import { adminConfigured, isAdmin } from "@/lib/admin/auth";
 import { listEnquiries } from "@/lib/admin/enquiries";
 import { getPortfolio, readContent } from "@/lib/content/store";
+import { CHAT_MODEL, chatProviderConfigured } from "@/lib/rag/provider";
+import { knowledgeBaseStats } from "@/lib/rag/knowledge";
 import { AdminDashboard } from "@/components/admin/AdminDashboard";
 import { AdminLogin } from "@/components/admin/AdminLogin";
 
@@ -22,6 +24,7 @@ export default async function AdminPage() {
   const content = await readContent();
   const samples = await getPortfolio();
   const enquiries = await listEnquiries();
+  const knowledgeStats = await knowledgeBaseStats();
 
   const services = defaultServices.map((s) => {
     const custom = content.services[s.slug];
@@ -52,6 +55,9 @@ export default async function AdminPage() {
       samples={samples}
       categories={portfolioCategories.map((c) => ({ id: c.id, label: c.label }))}
       serviceOptions={defaultServices.map((s) => ({ id: s.slug, label: s.title }))}
+      knowledgeStats={knowledgeStats}
+      chatProviderConfigured={chatProviderConfigured()}
+      chatModel={CHAT_MODEL}
     />
   );
 }

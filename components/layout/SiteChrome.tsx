@@ -4,6 +4,7 @@ import { AnalyticsListener } from "@/components/motion/AnalyticsListener";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
+import { ChatWidget } from "@/components/chat/ChatWidget";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -26,6 +27,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
       </main>
       <Footer />
       <StickyQuoteCta />
+      <ChatWidget />
       <SmoothScroll />
       <ScrollReveal />
       <AnalyticsListener />

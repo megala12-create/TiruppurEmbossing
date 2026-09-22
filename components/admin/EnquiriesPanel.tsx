@@ -14,9 +14,11 @@ const STATUS: Record<EnquiryStatus, { label: string; className: string }> = {
 };
 
 const FIELD_LABELS: [string, string][] = [
+  ["channel", "Source"],
   ["company", "Company"],
   ["serviceTitle", "Printing service"],
   ["subService", "Variation"],
+  ["garmentType", "Garment type"],
   ["quantity", "Quantity"],
   ["fabric", "Fabric / material"],
   ["placement", "Placement"],

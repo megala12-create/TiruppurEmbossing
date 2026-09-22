@@ -8,6 +8,7 @@ import { cn } from "@/lib/cn";
 import { LogoLockup } from "@/components/ui/Brand";
 import { EnquiriesPanel } from "./EnquiriesPanel";
 import { ImageSlotCard, type ImageSlot } from "./ImageSlotCard";
+import { KnowledgeBasePanel, type KnowledgeStats } from "./KnowledgeBasePanel";
 import { SamplesManager } from "./SamplesManager";
 import type { Notify } from "./shared";
 
@@ -20,6 +21,9 @@ type Props = {
   samples: PortfolioItem[];
   categories: Option[];
   serviceOptions: Option[];
+  knowledgeStats: KnowledgeStats;
+  chatProviderConfigured: boolean;
+  chatModel: string;
 };
 
 const TABS = [
@@ -27,11 +31,22 @@ const TABS = [
   { id: "services", label: "Service categories" },
   { id: "samples", label: "Samples (portfolio)" },
   { id: "machines", label: "Machines" },
+  { id: "knowledge", label: "TE Chat" },
 ] as const;
 
 type Tab = (typeof TABS)[number]["id"];
 
-export function AdminDashboard({ enquiries, services, machines, samples, categories, serviceOptions }: Props) {
+export function AdminDashboard({
+  enquiries,
+  services,
+  machines,
+  samples,
+  categories,
+  serviceOptions,
+  knowledgeStats,
+  chatProviderConfigured,
+  chatModel,
+}: Props) {
   const router = useRouter();
   const [tab, setTab] = useState<Tab>("enquiries");
   const [toast, setToast] = useState<{ message: string; tone: "ok" | "error" } | null>(null);
@@ -157,6 +172,9 @@ export function AdminDashboard({ enquiries, services, machines, samples, categor
                 ))}
               </ul>
             </>
+          )}
+          {tab === "knowledge" && (
+            <KnowledgeBasePanel stats={knowledgeStats} providerConfigured={chatProviderConfigured} model={chatModel} notify={notify} />
           )}
         </div>
       </main>
