@@ -67,7 +67,7 @@ export function KnowledgeBasePanel({
         <span>
           {providerConfigured
             ? `Generating replies with ${model}.`
-            : "GEMINI_API_KEY is not set, so TE Chat replies with matched website content only, not generated answers. Add the key in your environment and redeploy to enable full answers."}
+            : "OPENROUTER_API_KEY is not set, so TE Chat replies with matched website content only, not generated answers. Add the key in your environment and redeploy to enable full answers."}
         </span>
       </div>
 

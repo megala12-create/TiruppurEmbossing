@@ -5,10 +5,11 @@ import { validateChatMessages } from "@/lib/rag/chatSchema";
 import { clientIp, rateLimited } from "@/lib/server/guards";
 
 export const runtime = "nodejs";
-// Headroom over lib/rag/provider.ts's own worst-case upstream budget (an 18s first
-// attempt plus an 8s retry = 26s), so a slow Gemini response fails into our graceful
-// fallback rather than a raw platform timeout.
-export const maxDuration = 35;
+// Headroom over lib/rag/provider.ts's worst-case upstream budget (a 10s first-token
+// wait plus a 35s generation window, or a failed first attempt plus a full retry), so
+// a slow reply fails into our graceful fallback rather than a raw platform timeout.
+// Tamil replies are the long tail here: Llama tokenises Tamil script very inefficiently.
+export const maxDuration = 60;
 
 /**
  * POST /api/chat
@@ -23,7 +24,8 @@ export const maxDuration = 35;
  *   {"type":"error","message":"..."}   - sent instead of the above on failure
  */
 export async function POST(request: Request) {
-  if (rateLimited(`chat:${clientIp(request)}`)) {
+  // A real conversation runs well past the 8-per-10-minutes enquiry-form default.
+  if (rateLimited(`chat:${clientIp(request)}`, 40)) {
     return json({ type: "error", message: "Too many messages in a short time. Please wait a few minutes." }, 429);
   }
 

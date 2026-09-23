@@ -11,13 +11,18 @@ const hits = new Map<string, number[]>();
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_REQUESTS = 8;
 
-export function rateLimited(ip: string) {
+/**
+ * `max` defaults to the enquiry-form limit (8 per 10 minutes), which is far too strict
+ * for a back-and-forth chat - a genuine TE Chat conversation runs well past 8 messages,
+ * so /api/chat passes its own higher ceiling.
+ */
+export function rateLimited(ip: string, max: number = MAX_REQUESTS) {
   const now = Date.now();
   const recent = (hits.get(ip) ?? []).filter((t) => now - t < WINDOW_MS);
   recent.push(now);
   hits.set(ip, recent);
   if (hits.size > 5000) hits.clear();
-  return recent.length > MAX_REQUESTS;
+  return recent.length > max;
 }
 
 export const clientIp = (req: Request) =>
