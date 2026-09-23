@@ -5,6 +5,10 @@ import { validateChatMessages } from "@/lib/rag/chatSchema";
 import { clientIp, rateLimited } from "@/lib/server/guards";
 
 export const runtime = "nodejs";
+// Headroom over lib/rag/provider.ts's own worst-case upstream budget (an 18s first
+// attempt plus an 8s retry = 26s), so a slow Gemini response fails into our graceful
+// fallback rather than a raw platform timeout.
+export const maxDuration = 35;
 
 /**
  * POST /api/chat

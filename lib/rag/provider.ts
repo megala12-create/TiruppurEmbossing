@@ -15,14 +15,32 @@
  * file is the only place that needs to change: streamReply()'s signature
  * (system prompt + context + message history in, text chunks out) is what
  * the rest of the app depends on.
+ *
+ * Uses `generateContent` (a single request/response), not
+ * `streamGenerateContent`: a live ListModels check against this project's
+ * key showed no model exposing `streamGenerateContent` in its
+ * `supportedGenerationMethods` (only `generateContent`, `countTokens`,
+ * `createCachedContent`, `batchGenerateContent`). Calling the streaming
+ * endpoint anyway "worked" but silently truncated replies mid-sentence with
+ * no error or finishReason - an unsupported code path, not a real feature.
+ * The app's own streaming contract (ND-JSON `delta` events to the client)
+ * is unchanged; it just now receives the whole reply as one delta instead
+ * of several, so token-by-token rendering isn't available with this
+ * provider/key, but replies are complete and reliable.
  */
 
 import type { ChatMessage } from "./chatSchema";
 import type { RetrievedChunk } from "./retrieve";
 
 /** Centralised model config - change here, not scattered through the codebase. */
-export const CHAT_MODEL = process.env.CHAT_MODEL?.trim() || "gemini-3.6-flash";
-const MAX_OUTPUT_TOKENS = 700;
+export const CHAT_MODEL = process.env.CHAT_MODEL?.trim() || "gemini-flash-lite-latest";
+const MAX_OUTPUT_TOKENS = 1024;
+// This key/model combination has measurably inconsistent latency and an occasional
+// transient 400 (confirmed not reproducible with the same payload retried immediately -
+// see streamReply). One retry with a shorter budget noticeably improves reliability
+// without risking the route's own maxDuration (app/api/chat/route.ts).
+const FIRST_ATTEMPT_TIMEOUT_MS = 18_000;
+const RETRY_TIMEOUT_MS = 8_000;
 const API_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 
 export const chatProviderConfigured = () => Boolean(process.env.GEMINI_API_KEY?.trim());
@@ -47,91 +65,77 @@ export async function* streamReply(args: GenerateArgs, sources: RetrievedChunk[]
       role: m.role === "assistant" ? "model" : "user",
       parts: [{ text: m.content }],
     })),
+    // No thinkingConfig: support for it is inconsistent across this project's available
+    // models (it 400s with INVALID_ARGUMENT on at least one Flash-Lite build), so omitting
+    // it is the compatible default. Revisit per-model if CHAT_MODEL is changed and latency
+    // matters more than the small risk of an unsupported field.
     generationConfig: { maxOutputTokens: MAX_OUTPUT_TOKENS, temperature: 0.4 },
   };
 
-  try {
-    const res = await fetch(`${API_BASE}/${CHAT_MODEL}:streamGenerateContent?alt=sse&key=${apiKey}`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    });
+  let chunk: ParsedChunk | null = null;
+  let lastError: unknown;
+  for (const timeoutMs of [FIRST_ATTEMPT_TIMEOUT_MS, RETRY_TIMEOUT_MS]) {
+    try {
+      chunk = await attemptGenerate(apiKey, body, timeoutMs);
+      lastError = undefined;
+      break;
+    } catch (err) {
+      lastError = err;
+    }
+  }
 
-    if (!res.ok || !res.body) {
-      const detail = await res.text().catch(() => "");
-      throw new Error(`Gemini responded ${res.status} ${res.statusText} ${detail.slice(0, 300)}`);
-    }
-
-    // The stream is read and re-assembled line by line rather than by splitting on blank
-    // lines: a single reader.read() can deliver several SSE "data:" lines already joined
-    // together, and splitting only on "\n\n" silently dropped everything but the first one
-    // in that case. Reading line-by-line (keeping any trailing partial line in `buffer` for
-    // the next chunk) is correct regardless of how the underlying stream happens to chunk.
-    const reader = res.body.getReader();
-    const decoder = new TextDecoder();
-    let buffer = "";
-    let sawMidStreamError = false;
-    for (;;) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      buffer += decoder.decode(value, { stream: true });
-      const lines = buffer.split("\n");
-      buffer = lines.pop() ?? "";
-      for (const line of lines) {
-        const result = parseSseLine(line);
-        if (result?.type === "text") yield result.text;
-        if (result?.type === "error") sawMidStreamError = true;
-      }
-    }
-    const tail = buffer.trim();
-    if (tail) {
-      // If generation is interrupted mid-stream, Gemini can append a plain (non "data:",
-      // pretty-printed) error object after the last successful chunk - try that shape too.
-      const result = parseSseLine(tail) ?? parseJsonErrorBlock(tail);
-      if (result?.type === "text") yield result.text;
-      if (result?.type === "error") sawMidStreamError = true;
-    }
-    if (sawMidStreamError) {
-      yield "\n\n(The connection to the assistant was interrupted partway through, so the answer above may be incomplete - please ask again if needed.)";
-    }
-  } catch (err) {
+  if (lastError !== undefined || !chunk) {
     // Never leak provider errors (which can include request details) to the client.
-    console.error("[te-chat] provider error:", err instanceof Error ? err.message : err);
+    console.error("[te-chat] provider error:", lastError instanceof Error ? lastError.message : lastError);
+    yield "\n\nSorry, I couldn't reach the assistant just now. Please try again in a moment, or use the contact details below.";
+    return;
+  }
+
+  if (chunk.text) yield chunk.text;
+  if (chunk.finishReason === "MAX_TOKENS") {
+    yield "\n\n(That answer hit a length limit and may be cut short - ask me to continue for more detail.)";
+  } else if (chunk.finishReason && chunk.finishReason !== "STOP") {
+    console.error("[te-chat] unexpected finishReason:", chunk.finishReason);
+    yield "\n\n(The assistant stopped early - please ask again if the answer above looks incomplete.)";
+  } else if (!chunk.text) {
+    console.error("[te-chat] provider error: Gemini returned no text and no finish reason");
     yield "\n\nSorry, I couldn't reach the assistant just now. Please try again in a moment, or use the contact details below.";
   }
 }
 
-type SseResult = { type: "text"; text: string } | { type: "error" };
+async function attemptGenerate(apiKey: string, body: unknown, timeoutMs: number): Promise<ParsedChunk> {
+  const res = await fetch(`${API_BASE}/${CHAT_MODEL}:generateContent?key=${apiKey}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+    // Fail into our own graceful fallback/retry well within Vercel's function time budget,
+    // instead of letting a hung/slow call get killed by the platform.
+    signal: AbortSignal.timeout(timeoutMs),
+  });
 
-/** Parses one `data: {...}` SSE line from the Gemini streaming API. */
-function parseSseLine(line: string): SseResult | null {
-  const trimmed = line.trim();
-  if (!trimmed.startsWith("data:")) return null;
-  const payload = trimmed.slice(5).trim();
-  if (!payload || payload === "[DONE]") return null;
-  try {
-    return jsonToResult(JSON.parse(payload));
-  } catch {
-    return null;
+  if (!res.ok) {
+    const detail = await res.text().catch(() => "");
+    throw new Error(`Gemini responded ${res.status} ${res.statusText} ${detail.slice(0, 300)}`);
   }
+
+  const chunk = jsonToChunk(await res.json());
+  if (!chunk || chunk.error) throw new Error("Gemini returned an error or empty response");
+  return chunk;
 }
 
-/** Parses a bare (non "data:"-prefixed, possibly multi-line/pretty-printed) `{"error": {...}}` block. */
-function parseJsonErrorBlock(text: string): SseResult | null {
-  if (!text.startsWith("{")) return null;
-  try {
-    return jsonToResult(JSON.parse(text));
-  } catch {
-    return null;
-  }
-}
+type ParsedChunk = { text?: string; error?: boolean; finishReason?: string };
 
-function jsonToResult(parsed: unknown): SseResult | null {
-  const obj = parsed as { error?: unknown; candidates?: { content?: { parts?: { text?: string }[] } }[] };
-  if (obj?.error) return { type: "error" };
-  const parts = obj?.candidates?.[0]?.content?.parts;
-  const text = parts?.map((p) => p.text ?? "").join("") ?? "";
-  return text ? { type: "text", text } : null;
+function jsonToChunk(parsed: unknown): ParsedChunk | null {
+  const obj = parsed as {
+    error?: unknown;
+    candidates?: { content?: { parts?: { text?: string }[] }; finishReason?: string }[];
+  };
+  if (obj?.error) return { error: true };
+  const candidate = obj?.candidates?.[0];
+  const text = candidate?.content?.parts?.map((p) => p.text ?? "").join("") || undefined;
+  const finishReason = candidate?.finishReason;
+  if (!text && !finishReason) return null;
+  return { text, finishReason };
 }
 
 /** Deterministic, no-LLM reply used when no provider key is configured. */
