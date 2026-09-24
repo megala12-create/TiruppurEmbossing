@@ -27,6 +27,7 @@
  */
 
 import { site } from "@/data/site";
+import { correctionFor, scanForUnsupportedClaims } from "./guard";
 import type { ChatMessage } from "./chatSchema";
 import type { RetrievedChunk } from "./retrieve";
 
@@ -68,7 +69,7 @@ export async function* streamReply(args: GenerateArgs, sources: RetrievedChunk[]
       ...args.messages.map((m) => ({ role: m.role, content: m.content })),
     ],
     max_tokens: MAX_OUTPUT_TOKENS,
-    temperature: 0.4,
+    temperature: 0.15, // low: creative variation has no upside in a grounded sales bot, and the 220-turn run showed invention correlating with it
     stream: true,
   };
 
@@ -79,9 +80,11 @@ export async function* streamReply(args: GenerateArgs, sources: RetrievedChunk[]
 
   for (const budget of [FIRST_ATTEMPT, RETRY_ATTEMPT]) {
     try {
+      let full = "";
       for await (const event of attemptStream(apiKey, body, budget)) {
         if (event.text) {
           yieldedText = true;
+          full += event.text;
           yield event.text;
         }
         if (event.finishReason === "length") {
@@ -91,6 +94,16 @@ export async function* streamReply(args: GenerateArgs, sources: RetrievedChunk[]
         }
       }
       if (!yieldedText) throw new Error("Provider returned an empty reply");
+
+      // Safety net: the prompt forbids invented figures/charges/capabilities, but
+      // enforcement measured over 220 turns was intermittent, so verify the finished
+      // reply too. It has already been streamed, so the honest move is to retract
+      // visibly rather than silently rewrite - and log it so the owner sees the rate.
+      const claims = scanForUnsupportedClaims(full);
+      if (claims.length) {
+        console.error("[te-chat] unsupported claim(s) in reply:", claims.map((c) => `${c.kind}: "${c.match}"`).join(" | "));
+        yield correctionFor(claims);
+      }
       return;
     } catch (err) {
       lastError = err;

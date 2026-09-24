@@ -1,0 +1,362 @@
+[
+  {
+    "customer": "Rajesh Kumar",
+    "company": "Kumar Exports",
+    "service": "Emboss Printing",
+    "profile": "Garment exporter, polo shirts for European buyers",
+    "turn": 1,
+    "question": "Hi, I'm Rajesh from Kumar Exports. We manufacture polo shirts for European buyers.",
+    "answer": "Hello Rajesh, nice to meet you. Tiruppur Embossing can help with various printing services for your polo shirts. What kind of print effect are you looking for? Do you have a specific design or artwork in mind?",
+    "sources": [
+      "Can you provide compliance/certification documents?",
+      "How much does the sample cost?",
+      "Can you make a sample?",
+      "Can you meet my delivery date?",
+      "Can you match this reference sample?"
+    ],
+    "totalMs": 6341,
+    "firstTextMs": 2650,
+    "timedOut": false
+  },
+  {
+    "customer": "Rajesh Kumar",
+    "company": "Kumar Exports",
+    "service": "Emboss Printing",
+    "profile": "Garment exporter, polo shirts for European buyers",
+    "turn": 2,
+    "question": "We want our brand logo on the left chest with a premium raised look. What would you suggest?",
+    "answer": "For a premium raised look on the left chest, I would provisionally suggest our HD / High-Density Printing service. It builds up ink layers to create a sharp, raised, and highly defined graphic, which is often used for logos and brand marks. However, our production team would need to review your artwork and fabric details to confirm suitability. Would you like to proceed with a quotation enquiry for HD printing, or would you like to explore other options?",
+    "sources": [
+      "Placement Printing",
+      "What is your MOQ?",
+      "HD / High-Density Printing",
+      "What is the rate for my quantity?",
+      "What artwork file do you need?"
+    ],
+    "totalMs": 7024,
+    "firstTextMs": 2095,
+    "timedOut": false
+  },
+  {
+    "customer": "Rajesh Kumar",
+    "company": "Kumar Exports",
+    "service": "Emboss Printing",
+    "profile": "Garment exporter, polo shirts for European buyers",
+    "turn": 3,
+    "question": "How is that different from the silicone HD option you mentioned?",
+    "answer": "Silicone HD Printing and HD Printing are both used for raised, premium looks, but they have some differences. Silicone HD Printing uses high-density silicone-based inks to build a flexible, dimensional print surface with clean edges, and can offer glossy, matte, or soft finishes. HD Printing, on the other hand, builds up ink layers for a structured, premium surface, but doesn't have the same flexibility as silicone. Our team would need to review your design and fabric to recommend the best option. Would you like to share your artwork and fabric details for a more informed suggestion?",
+    "sources": [
+      "Silicone HD Printing",
+      "HD / High-Density Printing",
+      "Printing systems in use",
+      "How much does the sample cost?",
+      "Screen Printing"
+    ],
+    "totalMs": 6306,
+    "firstTextMs": 1578,
+    "timedOut": false
+  },
+  {
+    "customer": "Rajesh Kumar",
+    "company": "Kumar Exports",
+    "service": "Emboss Printing",
+    "profile": "Garment exporter, polo shirts for European buyers",
+    "turn": 4,
+    "question": "Let's go with emboss then. Our fabric is 220 GSM pique cotton - will it hold the emboss properly?",
+    "answer": "Emboss printing can create a nice, tactile effect for your brand logo. For 220 GSM pique cotton, the emboss definition and depth may be influenced by the fabric's weight, knit structure, and fibre composition. Our production team would need to review your specific fabric and design to confirm suitability. We may also need to do some sampling to ensure the emboss reads clearly and consistently on your fabric. Would you like to proceed with a quotation enquiry, including sampling, to get a better understanding of how the emboss will work on your pique cotton?",
+    "sources": [
+      "What printing process is suitable for my design?",
+      "Emboss Printing",
+      "What is the best price for this design?",
+      "Can you print this on my fabric?",
+      "How much does the sample cost?"
+    ],
+    "totalMs": 6860,
+    "firstTextMs": 1029,
+    "timedOut": false
+  },
+  {
+    "customer": "Rajesh Kumar",
+    "company": "Kumar Exports",
+    "service": "Emboss Printing",
+    "profile": "Garment exporter, polo shirts for European buyers",
+    "turn": 5,
+    "question": "Good. What would the price per piece be for 1000 polos with that?",
+    "answer": "I don't have confirmed pricing information for emboss printing on 220 GSM pique cotton. Pricing depends on several factors, including design complexity, print size, placement, and quantity. I can help you collect the details for a quotation request. Our team will review your specifics and provide a tailored quote. Can you please confirm your company name, contact person, phone number, and email address, so I can assist you with the quotation request?",
+    "sources": [
+      "What is the best price for this design?",
+      "What is the rate for my quantity?",
+      "How much does the sample cost?",
+      "What is your MOQ?",
+      "What artwork file do you need?"
+    ],
+    "totalMs": 11834,
+    "firstTextMs": 1037,
+    "timedOut": false
+  },
+  {
+    "customer": "Priya Venkatesan",
+    "company": "VStar Sportswear",
+    "service": "Sublimation Printing",
+    "profile": "Sportswear maker, all-over printed jerseys",
+    "turn": 1,
+    "question": "Hello, we make sports jerseys for local clubs. Do you handle all-over printing?",
+    "answer": "We offer Sublimation Printing, which is ideal for all-over prints and sportswear. This process uses heat to transfer inks into polyester or polymer-coated surfaces, creating a continuous colour and full-coverage design. We can help with cut-panel and all-over print formats, but we'd need to know more about your garment type and panel details. Would you like to proceed with a quotation enquiry for your sports jerseys?",
+    "sources": [
+      "Sublimation Printing",
+      "Printing systems in use",
+      "What printing process is suitable for my design?",
+      "Can you make a sample?",
+      "Can you handle my bulk quantity?"
+    ],
+    "totalMs": 13150,
+    "firstTextMs": 1085,
+    "timedOut": false
+  },
+  {
+    "customer": "Priya Venkatesan",
+    "company": "VStar Sportswear",
+    "service": "Sublimation Printing",
+    "profile": "Sportswear maker, all-over printed jerseys",
+    "turn": 2,
+    "question": "Our jerseys are 100% polyester mesh. Is that okay for it?",
+    "answer": "100% polyester mesh is a great fabric for Sublimation Printing. Since it's 100% polyester, the colour vibrancy should be good. However, please note that the fabric colour will affect the final result, so it's best if the base fabric is white or light-coloured. We can discuss further details, such as print size, placement, and quantity, to give you a better understanding of the process. Would you like to share more about your design and requirements?",
+    "sources": [
+      "Sublimation Printing",
+      "What printing process is suitable for my design?"
+    ],
+    "totalMs": 5881,
+    "firstTextMs": 1570,
+    "timedOut": false
+  },
+  {
+    "customer": "Priya Venkatesan",
+    "company": "VStar Sportswear",
+    "service": "Sublimation Printing",
+    "profile": "Sportswear maker, all-over printed jerseys",
+    "turn": 3,
+    "question": "We also have some cotton training tees. Can you use the same process for those?",
+    "answer": "For cotton training tees, Sublimation Printing might not be the best option, as it works best with polyester or polymer-coated surfaces. For cotton, we might recommend a different printing process, such as Screen Printing or Direct-to-Film (DTF) printing, depending on the design and quantity. I can help you explore these options, but it's best to get our team's review on the most suitable process for your specific requirements. Would you like to proceed with a quotation enquiry for both the polyester mesh jerseys and the cotton training tees?",
+    "sources": [
+      "What printing process is suitable for my design?"
+    ],
+    "totalMs": 8680,
+    "firstTextMs": 2250,
+    "timedOut": false
+  },
+  {
+    "customer": "Priya Venkatesan",
+    "company": "VStar Sportswear",
+    "service": "Sublimation Printing",
+    "profile": "Sportswear maker, all-over printed jerseys",
+    "turn": 4,
+    "question": "Alright, let's stick to the polyester jerseys. What is your minimum order quantity?",
+    "answer": "I don't have a confirmed minimum order quantity (MOQ) for you. As per our guidelines, MOQ can vary by printing process and job type. To get a accurate answer, I can help you submit a quotation enquiry with your expected quantity, and our team will confirm what's possible for your design. Would you like to proceed with that?",
+    "sources": [
+      "What is the best price for this design?",
+      "What printing process is suitable for my design?",
+      "What is the rate for my quantity?",
+      "What is your MOQ?",
+      "Can you handle my bulk quantity?"
+    ],
+    "totalMs": 9871,
+    "firstTextMs": 2090,
+    "timedOut": false
+  },
+  {
+    "customer": "Priya Venkatesan",
+    "company": "VStar Sportswear",
+    "service": "Sublimation Printing",
+    "profile": "Sportswear maker, all-over printed jerseys",
+    "turn": 5,
+    "question": "We need 500 pieces by 20th October. Is that achievable?",
+    "answer": "I don't have a confirmed production timeline or delivery date for you. Our team would need to review your specific requirements, including the design, quantity, and fabric, to determine if we can meet your target date of 20th October. I can help you collect the necessary details and submit a quotation enquiry. Our team will then assess the feasibility and get back to you with a more accurate answer. Would you like to proceed with that?",
+    "sources": [],
+    "totalMs": 5782,
+    "firstTextMs": 1569,
+    "timedOut": false
+  },
+  {
+    "customer": "Mohammed Arif",
+    "company": "Arif Sourcing",
+    "service": "DTF Printing",
+    "profile": "Buying house sourcing for multiple brands",
+    "turn": 1,
+    "question": "Good morning. I'm a sourcing agent working with several apparel brands.",
+    "answer": "Good morning. Nice to connect with you. Tiruppur Embossing offers various textile and garment printing services. What type of printing are you looking for - such as embossing, DTF, sublimation, or something else? Or do you have a specific brand requirement you'd like to discuss?",
+    "sources": [
+      "Can you provide compliance/certification documents?",
+      "How much does the sample cost?",
+      "Can you make a sample?",
+      "Can you meet my delivery date?",
+      "Can you match this reference sample?"
+    ],
+    "totalMs": 5278,
+    "firstTextMs": 1568,
+    "timedOut": false
+  },
+  {
+    "customer": "Mohammed Arif",
+    "company": "Arif Sourcing",
+    "service": "DTF Printing",
+    "profile": "Buying house sourcing for multiple brands",
+    "turn": 2,
+    "question": "One of my clients has a photographic design with about 12 colours. Which process would you use for it?",
+    "answer": "For a photographic design with 12 colors, the team would need to review the specifics. Generally, a process like sublimation or DTF might be suitable for such designs, but it depends on the fabric, desired finish, and quantity. I can guide you through a quotation request so the team can assess and recommend the best printing options for your client's design. Would you like to proceed with that?",
+    "sources": [
+      "What printing process is suitable for my design?",
+      "Can you handle my bulk quantity?",
+      "What is the rate for my quantity?",
+      "Can you print this on my fabric?",
+      "Quality and production principles"
+    ],
+    "totalMs": 6389,
+    "firstTextMs": 2281,
+    "timedOut": false
+  },
+  {
+    "customer": "Mohammed Arif",
+    "company": "Arif Sourcing",
+    "service": "DTF Printing",
+    "profile": "Buying house sourcing for multiple brands",
+    "turn": 3,
+    "question": "Why that one over screen printing?",
+    "answer": "While screen printing is a versatile process, it typically requires a separate screen for each color, which can make it less practical for designs with many colors, like your client's 12-color photographic design. Sublimation or DTF, on the other hand, can handle full-color designs more efficiently. However, this is just a provisional suggestion - the team would need to review the design and production requirements to confirm the best approach. Screen printing might still be an option, depending on the specifics. Would you like to collect the details for a quotation so the team can provide a more informed recommendation?",
+    "sources": [
+      "Screen Printing",
+      "Sublimation Printing",
+      "Combination / Value-Added Printing",
+      "Printing systems in use",
+      "Supporting production equipment"
+    ],
+    "totalMs": 14710,
+    "firstTextMs": 3161,
+    "timedOut": false
+  },
+  {
+    "customer": "Mohammed Arif",
+    "company": "Arif Sourcing",
+    "service": "DTF Printing",
+    "profile": "Buying house sourcing for multiple brands",
+    "turn": 4,
+    "question": "Does it hold up in industrial washing?",
+    "answer": "The wash performance of the print depends on several factors, including the printing process, inks, fabric, and garment care. I can offer some interim guidance: the team will need to discuss your specific wash and care requirements to plan and sample the process accordingly. This ensures the chosen method meets your needs. It's best to reach out to the team directly to discuss this further. Would you like their contact details or to proceed with a quotation request?",
+    "sources": [
+      "Will the print withstand washing?",
+      "What printing process is suitable for my design?"
+    ],
+    "totalMs": 7850,
+    "firstTextMs": 2601,
+    "timedOut": false
+  },
+  {
+    "customer": "Mohammed Arif",
+    "company": "Arif Sourcing",
+    "service": "DTF Printing",
+    "profile": "Buying house sourcing for multiple brands",
+    "turn": 5,
+    "question": "Fine. What artwork format should I send you for it?",
+    "answer": "According to our interim guidance [1], you can upload the artwork files you have when you request a quote. The team will then check if the files are production-ready for the selected process and let you know if anything else is needed. We can start with that. Shall I guide you through collecting the details for a quotation, including your company name, contact person, and other relevant information?",
+    "sources": [
+      "What artwork file do you need?",
+      "What printing process is suitable for my design?",
+      "What is the rate for my quantity?",
+      "What is the best price for this design?",
+      "What is your MOQ?"
+    ],
+    "totalMs": 9505,
+    "firstTextMs": 2600,
+    "timedOut": false
+  },
+  {
+    "customer": "Lakshmi Narayanan",
+    "company": "Lakshmi Label",
+    "service": "Silicone HD / Specialty",
+    "profile": "Fashion label wanting premium layered finishes",
+    "turn": 1,
+    "question": "Hi, I run a fashion label and I'm looking for a premium finish on our hoodies.",
+    "answer": "For a premium finish on hoodies, we offer various printing services. Can you tell me a bit more about the design and effect you're looking for? Is it a simple logo, a complex graphic, or perhaps a textured finish? This will help me guide you towards the most suitable printing process.",
+    "sources": [
+      "Can you match this reference sample?",
+      "Can you provide compliance/certification documents?",
+      "How much does the sample cost?",
+      "Can you make a sample?",
+      "Can you meet my delivery date?"
+    ],
+    "totalMs": 5968,
+    "firstTextMs": 1702,
+    "timedOut": false
+  },
+  {
+    "customer": "Lakshmi Narayanan",
+    "company": "Lakshmi Label",
+    "service": "Silicone HD / Specialty",
+    "profile": "Fashion label wanting premium layered finishes",
+    "turn": 2,
+    "question": "I want a raised glossy logo that feels high-end. What do you recommend?",
+    "answer": "A raised glossy logo sounds like a great choice for a premium finish. Based on your requirements, I would provisionally suggest our Silicone HD Printing service. It builds a raised, flexible silicone surface with a crisp, high-definition edge and can be finished in a glossy look. However, I must note that the suitability of this process depends on the fabric composition and design, so it's best to consult with our team for a final recommendation. Would you like to proceed with a quotation enquiry, and we can discuss further details such as fabric type and logo design?",
+    "sources": [
+      "HD / High-Density Printing",
+      "Silicone HD Printing",
+      "What is your MOQ?",
+      "What printing process is suitable for my design?",
+      "Printing systems in use"
+    ],
+    "totalMs": 6436,
+    "firstTextMs": 1161,
+    "timedOut": false
+  },
+  {
+    "customer": "Lakshmi Narayanan",
+    "company": "Lakshmi Label",
+    "service": "Silicone HD / Specialty",
+    "profile": "Fashion label wanting premium layered finishes",
+    "turn": 3,
+    "question": "Can we add a puff texture around that same logo?",
+    "answer": "That's an interesting idea. Adding a puff texture around the logo can create a unique, tactile experience. Our Specialty Printing service offers Puff as one of its variations, which can add a raised, soft-to-the-touch texture to your design. We can potentially combine this with the Silicone HD Printing for the glossy logo. However, to confirm the feasibility and best approach, I'd recommend consulting with our production team. They can review your specific design and fabric requirements to ensure the desired outcome. Would you like to provide more details about your project, such as the fabric type and logo design, so we can prepare a quotation enquiry?",
+    "sources": [
+      "Specialty Printing"
+    ],
+    "totalMs": 8790,
+    "firstTextMs": 5388,
+    "timedOut": false
+  },
+  {
+    "customer": "Lakshmi Narayanan",
+    "company": "Lakshmi Label",
+    "service": "Silicone HD / Specialty",
+    "profile": "Fashion label wanting premium layered finishes",
+    "turn": 4,
+    "question": "What is the largest size we could run on the back panel?",
+    "answer": "The largest print size we can accommodate on the back panel depends on the garment size and type, as well as the printing process. According to our Placement Printing service, the print size can be limited by seams, pockets, and garment construction. To give you a more accurate answer, could you please share the specific garment type (e.g., hoodie size, style), and the desired print size you have in mind? Our team will need to review these details to confirm the maximum print size possible for your design. Would you like to proceed with a quotation enquiry, and we can discuss further?",
+    "sources": [
+      "What is your MOQ?",
+      "What is the rate for my quantity?",
+      "What is the best price for this design?",
+      "Placement Printing",
+      "What artwork file do you need?"
+    ],
+    "totalMs": 6849,
+    "firstTextMs": 1574,
+    "timedOut": false
+  },
+  {
+    "customer": "Lakshmi Narayanan",
+    "company": "Lakshmi Label",
+    "service": "Silicone HD / Specialty",
+    "profile": "Fashion label wanting premium layered finishes",
+    "turn": 5,
+    "question": "Okay, I'd like to talk to your team about this. How do I reach them?",
+    "answer": "You can reach our team directly through email at tiruppurembossing@gmail.com, or by phone at +91 98403 37054 (primary), +91 80150 25002 (production desk), or +91 97892 68002 (office). We're also available on WhatsApp at +91 98403 37054. If you prefer, you can also visit our location in Ammapalayam, Tiruppur, Tamil Nadu, India. Email or WhatsApp are usually the fastest ways to get in touch with us. Would you like me to summarize the details we've discussed so far, so you can easily share them with our team?",
+    "sources": [
+      "Can you provide compliance/certification documents?",
+      "How much does the sample cost?",
+      "What is the best price for this design?",
+      "Can you meet my delivery date?",
+      "How long will bulk production take?"
+    ],
+    "totalMs": 8406,
+    "firstTextMs": 1560,
+    "timedOut": false
+  }
+]

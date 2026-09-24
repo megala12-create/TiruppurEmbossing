@@ -60,6 +60,17 @@ function expand(tokens: string[]): string[] {
   return [...out];
 }
 
+/** Relative weighting per chunk category - see the comment in retrieve(). */
+const CATEGORY_WEIGHT: Record<ChunkCategory, number> = {
+  service: 1.35,
+  contact: 1.1,
+  faq: 1,
+  process: 1,
+  reference: 1,
+  policy: 1,
+  capability: 0.8,
+};
+
 export type RetrievedChunk = KnowledgeChunk & { score: number };
 
 export type RetrieveOptions = {
@@ -88,7 +99,10 @@ export async function retrieve(query: string, opts: RetrieveOptions = {}): Promi
     }
     // normalise a little for very long chunks so they don't win purely on length
     const norm = Math.sqrt(bodyTokens.length || 1);
-    return { chunk, score: score / norm };
+    // What the company actually sells should outrank machine lists and pending FAQs when
+    // scores are close: "what do you offer?" was being answered from the machines chunk,
+    // which silently dropped four whole service categories.
+    return { chunk, score: (score / norm) * CATEGORY_WEIGHT[chunk.category] };
   });
 
   return scored

@@ -1,0 +1,1542 @@
+[
+  {
+    "n": 1,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 2,
+    "rating": 7,
+    "improve": "YES",
+    "reason": "Asked for a 'premium raised look' on a left-chest logo, it suggested HD and Silicone HD but did not mention Emboss - the company's signature service, and the process the customer ends up choosing two turns later. The same prompt produced a correct three-option answer including emboss during verification, so this is inconsistency rather than a fixed regression.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 3,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 4,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 5,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 6,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 7,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 8,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 9,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 10,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 11,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 12,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 13,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 14,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 15,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 16,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 17,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 18,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Recalls 'you're from Kumar Exports' correctly, but then still asks him to confirm the company name in the same breath. Mildly redundant rather than wrong.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 19,
+    "rating": 10,
+    "improve": "NO",
+    "reason": "Outstanding context retention: after 19 turns it summarised company Kumar Exports, 1000 polos, 220 GSM pique cotton, emboss with possible foil detail - all details supplied across earlier turns, none re-asked.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 20,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 21,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 22,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 23,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 24,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Slightly absolute wording - 'sublimation only works with polyester' - where the data says polyester or polymer-coated surfaces. Practical advice is correct and it redirects to suitable alternatives.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 25,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 26,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 27,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 28,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 29,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 30,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 31,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 32,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 33,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 34,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 35,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 36,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 37,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 38,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 39,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 40,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 41,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 42,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 43,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 44,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 45,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 46,
+    "rating": 6,
+    "improve": "YES",
+    "reason": "Ungrounded technical comparison: states DTF 'tends to have a softer, more pliable feel' than screen printing. The data says only that hand feel varies with fabric composition and texture - it makes no comparative claim. This is outside knowledge filling a gap, which the grounding rules forbid.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 47,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 48,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 49,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 50,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 51,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 52,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 53,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 54,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 55,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 56,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 57,
+    "rating": 6,
+    "improve": "YES",
+    "reason": "Over-claims a service: 'We can provide testing and reporting for specific printing processes and fabrics' before admitting no confirmed information on standard wash test reports. Offering testing-and-reporting as a capability is not supported by the business data.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 58,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 59,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 60,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 61,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 62,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 63,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Directly asked 'how thick can the silicone go' and correctly refused to invent a millimetre figure - the exact fabrication that had to be fixed after the first run.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 64,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 65,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 66,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 67,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 68,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 69,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Asked for maximum back-panel print size and correctly deferred with no invented dimension. This was a 3/10 fabrication before the fix, so it is the clearest evidence the fix held.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 70,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 71,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 72,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 73,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 74,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 75,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 76,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 77,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Good commercial honesty: flags that woven labels sit outside the garment-printing services rather than over-promising.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 78,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 79,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 80,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 81,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 82,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 83,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 84,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 85,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 86,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 87,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 88,
+    "rating": 3,
+    "improve": "YES",
+    "reason": "INVENTED CAPABILITY SPEC. States 'we can typically print up to 6-8 colours in a single run'. No colour-capacity figure exists anywhere in the business data. This is the highest-risk failure type for this project: a buyer can plan a design around it, and production may not be able to honour it.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 89,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 90,
+    "rating": 3,
+    "improve": "YES",
+    "reason": "INVENTED COMMERCIAL TERM. Answers 'Yes, there is a separate screen setup charge'. The knowledge base only says colour count influences setup - it never states that a setup charge exists. Asserting a chargeable item is exactly the controlled commercial data the assistant is forbidden from inventing, and it could be quoted back in a price dispute.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 91,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 92,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 93,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 94,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 95,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 96,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 97,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 98,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 99,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 100,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 101,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 102,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 103,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 104,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 105,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 106,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 107,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 108,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 109,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 110,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 111,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 112,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 113,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 114,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 115,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 116,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 117,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 118,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 119,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 120,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 121,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 122,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 123,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 124,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 125,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 126,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 127,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 128,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 129,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 130,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 131,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 132,
+    "rating": 7,
+    "improve": "YES",
+    "reason": "Claims 'we can do variable data printing' for individual names. Variable-data capability is not listed anywhere in the service data. It is hedged with an offer to confirm with the team, so this is an over-claim rather than a hard fabrication, but it should defer instead.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 133,
+    "rating": 7,
+    "improve": "YES",
+    "reason": "Continues the unconfirmed 'variable data printing' framing from the previous turn when discussing whether it carries an extra charge. Correctly refuses to state a charge, so the pricing rail held.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 134,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 135,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 136,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 137,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 138,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 139,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 140,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 141,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 142,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 143,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 144,
+    "rating": 5,
+    "improve": "YES",
+    "reason": "Ungrounded material claims: says the window sticker vinyl 'is waterproof, durable, and can be easily removed without leaving residue'. None of that is in the business data, which only says sticker material and adhesive are chosen for the surface. Notably the bot then correctly says 'I don't have that confirmed' to a similar question two turns later - so it is inconsistent, not uniformly wrong.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 145,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Correctly answers 'I don't have that confirmed' on long-term glass adhesion.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 146,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 147,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 148,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 149,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 150,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 151,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Correctly distinguishes garment stickers from the heat-applied transfer service instead of blurring them.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 152,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 153,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 154,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 155,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 156,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 157,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 158,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 159,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 160,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 161,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 162,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 163,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 164,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 165,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 166,
+    "rating": 7,
+    "improve": "YES",
+    "reason": "Marketing puffery not grounded in the data: 'We would use precision printing and embossing equipment, and our experienced technicians...'. Registration between techniques is a real topic in the data, but the equipment and staffing claims are invented colour.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 167,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 168,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 169,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 170,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 171,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 172,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 173,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 174,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 175,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 176,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 177,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 178,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 179,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 180,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 181,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 182,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 183,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 184,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 185,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 186,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 187,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 188,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 189,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 190,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 191,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 192,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 193,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 194,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 195,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 196,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 197,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 198,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 199,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 200,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 201,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 202,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 203,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 204,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 205,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 206,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 207,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 208,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 209,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 210,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 211,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 212,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 213,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 214,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 215,
+    "rating": 9,
+    "improve": "NO",
+    "reason": "Commercially sensitive question. Read individually: correctly declined to state a figure and routed to the team for confirmation.",
+    "reviewed": "manual"
+  },
+  {
+    "n": 216,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 217,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 218,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 219,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  },
+  {
+    "n": 220,
+    "rating": 8,
+    "improve": "NO",
+    "reason": "Spot-checked and machine-scanned: grounded in the service data, no invented figures, price, MOQ, date or certification claim, and no internal vocabulary leaked.",
+    "reviewed": "scanned"
+  }
+]

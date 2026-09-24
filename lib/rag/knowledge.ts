@@ -46,6 +46,27 @@ export type KnowledgeChunk = {
 
 const clean = (parts: (string | undefined | null)[]) => parts.filter(Boolean).join(" ");
 
+/**
+ * A single compact chunk listing every service category. Without this, "what do you
+ * offer?" retrieved the machines chunk and answered with the 8 production systems,
+ * silently dropping Specialty, Sticker, Combination and Placement printing.
+ */
+function serviceOverviewChunk(): KnowledgeChunk {
+  return {
+    id: "service:overview",
+    title: "Full list of printing services offered",
+    category: "service",
+    url: "/services",
+    source: "data/services.ts",
+    verified: true,
+    text: clean([
+      `${site.name} offers ${services.length} printing service categories in total:`,
+      services.map((s) => `${s.title} (${s.shortDescription})`).join(" | "),
+      `Emboss printing is the company's signature service.`,
+    ]),
+  };
+}
+
 function serviceChunks(): KnowledgeChunk[] {
   return services.map((s) => ({
     id: `service:${s.slug}`,
@@ -78,7 +99,9 @@ function faqChunks(): KnowledgeChunk[] {
       `Question: ${f.question} (${faqGroups[f.group]}).`,
       f.answer
         ? `Confirmed answer: ${f.answer}`
-        : `No confirmed answer yet. Interim guidance to give the customer: ${f.guidance} Route them to ${f.next === "quote" ? "a quotation request" : "contacting the team directly"}.`,
+        : // Deliberately avoids the words "interim guidance": the model used to echo that
+          // internal phrase straight back at customers (see chat-test-results).
+          `The owner has not confirmed a fixed answer to this yet, so do not state one. Instead say this in your own words, as the company's own position: ${f.guidance} Then move them towards ${f.next === "quote" ? "a quotation request" : "contacting the team directly"}.`,
     ]),
   }));
 }
@@ -185,6 +208,7 @@ let cache: { builtAt: number; chunks: KnowledgeChunk[] } | null = null;
 export async function getKnowledgeBase(): Promise<{ builtAt: number; chunks: KnowledgeChunk[] }> {
   if (cache) return cache;
   const chunks = [
+    serviceOverviewChunk(),
     ...serviceChunks(),
     ...faqChunks(),
     ...processChunks(),

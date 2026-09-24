@@ -25,7 +25,8 @@ export const maxDuration = 60;
  */
 export async function POST(request: Request) {
   // A real conversation runs well past the 8-per-10-minutes enquiry-form default.
-  if (rateLimited(`chat:${clientIp(request)}`, 40)) {
+  // Tunable so load/QA runs don't trip it; keep it low enough to stay an abuse guard.
+  if (rateLimited(`chat:${clientIp(request)}`, Number(process.env.CHAT_RATE_LIMIT) || 40)) {
     return json({ type: "error", message: "Too many messages in a short time. Please wait a few minutes." }, 429);
   }
 

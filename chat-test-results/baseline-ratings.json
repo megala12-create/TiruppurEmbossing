@@ -1,0 +1,22 @@
+[
+{"n":1,"rating":9,"improve":"NO","reason":""},
+{"n":2,"rating":7,"improve":"YES","reason":"Offered only ONE option and it was not the flagship one. For 'premium raised look on left chest' it suggested HD / High-Density Printing alone, never mentioning Emboss - the company's signature service it is named after - or Silicone HD. An open 'what would you suggest' question from a new exporter should present the 2-3 genuinely relevant processes with a one-line trade-off each, then narrow down."},
+{"n":3,"rating":8,"improve":"NO","reason":"Context handled well. Note the customer's question contained a false premise ('the silicone HD option you mentioned') - the bot had actually suggested HD, not Silicone HD. It did not correct the premise but gave an accurate, useful comparison anyway, which is the more helpful trade-off."},
+{"n":4,"rating":9,"improve":"NO","reason":""},
+{"n":5,"rating":7,"improve":"YES","reason":"Context retention failure. It asked Rajesh to 'confirm your company name, contact person' when he opened the conversation with 'I'm Rajesh from Kumar Exports'. Re-asking for details already given makes a long conversation feel like a form. It should pre-fill what it already knows and only ask for the genuinely missing fields (phone/email)."},
+{"n":6,"rating":9,"improve":"NO","reason":""},
+{"n":7,"rating":9,"improve":"NO","reason":"Notably better than the one-shot run: it volunteered the white/light base fabric caveat unprompted this time."},
+{"n":8,"rating":9,"improve":"NO","reason":"Improved on the one-shot run, which made an ungrounded claim that cotton sublimation is 'possible but less vibrant'. Here it stayed grounded and redirected to Screen Printing / DTF, both real services."},
+{"n":9,"rating":8,"improve":"NO","reason":"Correct refusal. Minor grammar slip ('a accurate answer') - cosmetic only, not worth a code change."},
+{"n":10,"rating":9,"improve":"NO","reason":""},
+{"n":11,"rating":9,"improve":"NO","reason":""},
+{"n":12,"rating":8,"improve":"NO","reason":"Names sublimation and DTF as candidates and correctly says it depends on fabric, finish and quantity. Safe, though slightly less decisive than it could be for a 12-colour photographic job."},
+{"n":13,"rating":9,"improve":"NO","reason":"Strong context handling - answered 'why that one over screen printing?' with the screens-per-colour reasoning and kept the recommendation provisional."},
+{"n":14,"rating":7,"improve":"YES","reason":"Internal vocabulary leaked to the customer: 'I can offer some interim guidance'. 'Interim guidance' is an internal field name in data/faqs.ts used for routing, not customer-facing copy. The deferral itself is correct."},
+{"n":15,"rating":6,"improve":"YES","reason":"Same leak, worse: 'According to our interim guidance [1]'. The bare [1] marker also renders as orphaned text because citations already appear as separate source chips below the message. A sourcing agent asking a concrete file-format question also deserves a firmer answer than 'upload what you have'."},
+{"n":16,"rating":9,"improve":"NO","reason":""},
+{"n":17,"rating":9,"improve":"NO","reason":""},
+{"n":18,"rating":10,"improve":"NO","reason":"Best answer of the run. Correctly found Puff under Specialty Printing, proposed combining it with Silicone HD, and deferred feasibility to the production team. The one-shot run failed this exact question - conversation context fixed it."},
+{"n":19,"rating":9,"improve":"NO","reason":""},
+{"n":20,"rating":10,"improve":"NO","reason":"All contact details exactly match the business data, and it proactively offered to summarise the conversation for handoff to the team."}
+]

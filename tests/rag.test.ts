@@ -32,7 +32,9 @@ test("knowledge base: never states an FAQ answer that isn't confirmed", async ()
   const pricingFaq = chunks.find((c) => c.id === "faq:best-price");
   assert.ok(pricingFaq);
   assert.equal(pricingFaq!.verified, false);
-  assert.match(pricingFaq!.text, /no confirmed answer/i);
+  assert.match(pricingFaq!.text, /has not confirmed a fixed answer/i);
+  // The chunk must never hand the model internal vocabulary it can echo at customers.
+  assert.doesNotMatch(pricingFaq!.text, /interim guidance/i);
 });
 
 test("retrieve: finds the combination-printing service for a mixed-technique question", async () => {
@@ -136,4 +138,28 @@ test("validateChatQuote: never invents an accepted-without-consent submission", 
   const draft = normalizeChatQuote({ name: "Priya Kumar", phone: "+91 98765 43210", service: "dtf-printing", consent: false });
   const errors = validateChatQuote(draft);
   assert.ok(errors.consent);
+});
+
+test("retrieve: 'what services do you offer' finds the full service list, not the machine list", async () => {
+  const results = await retrieve("What printing services do you offer?", { topK: 5, minScore: 0.5 });
+  const ids = results.map((r) => r.id);
+  assert.ok(ids.includes("service:overview"), `expected service:overview in ${ids.join(", ")}`);
+  const overview = results.find((r) => r.id === "service:overview")!;
+  // All 11 categories must be present - the machines chunk only covers 8 systems.
+  for (const t of ["Specialty Printing", "Sticker Printing", "Combination", "Placement Printing", "Emboss Printing"]) {
+    assert.ok(overview.text.includes(t), `service overview is missing ${t}`);
+  }
+});
+
+test("context block: no internal vocabulary or bracketed citation markers", async () => {
+  const results = await retrieve("What is your price per piece?", { topK: 3 });
+  const block = buildContextBlock(results);
+  assert.doesNotMatch(block, /interim guidance/i);
+  assert.doesNotMatch(block, /cite by \[/i);
+});
+
+test("system prompt: forbids inventing measurements and mis-pushing the flagship service", () => {
+  assert.match(SYSTEM_PROMPT, /NEVER invent a number/);
+  assert.match(SYSTEM_PROMPT, /do not estimate/i);
+  assert.match(SYSTEM_PROMPT, /never push it into a request it does not suit/i);
 });
